@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Henry Taylor</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Projects by Henry Taylor" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="./">Henry Taylor</a>
+      <div class="links"><button class="button ghost small" id="themeToggle" type="button">Toggle Web Overlay</button>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="docs/">Docs</a>
+        <a class="button" href="mailto:henry.taylor@example.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Featured Project</h1>
+    <article class="project">
+      <img src="media/screenshot-placeholder.png" alt="Project screenshot placeholder" />
+      <div>
+        <h2>Greeter Utility</h2>
+        <p>
+          A tiny JavaScript utility demonstrating how I write docstrings and generate API documentation with JSDoc.
+          The live docs are available under the <a href="docs/">Docs</a> tab after deployment.
+        </p>
+        <p>Source file: <code>src/greeter.js</code></p>
+        <p class="muted">Swap this with your real project when ready.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="year"></span> Henry Taylor • <a href="https://github.com/henry-taylor/portfolio">Source</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const overlayKey = 'show-web';
+    const root = document.body;
+    const saved = localStorage.getItem(overlayKey);
+    if (saved !== 'off') root.classList.remove('no-web');
+    else root.classList.add('no-web');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('no-web');
+      localStorage.setItem(overlayKey, root.classList.contains('no-web') ? 'off' : 'on');
+    });
+  </script>
+</body>
+</html>

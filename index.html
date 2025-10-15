@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Henry Taylor — Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Personal portfolio of Henry Taylor: projects, contact, and auto-generated docs." />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="./">Henry Taylor</a>
+      <div class="links"><button class="button ghost small" id="themeToggle" type="button" title="Switch background">Toggle Web Overlay</button>
+        <a href="projects.html">Projects</a>
+        <a href="docs/">Docs</a>
+        <a class="button" href="mailto:henry.taylor@example.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container hero">
+    <section>
+      <h1>Hi, I'm <span class="accent">Henry Taylor</span> 👋</h1>
+      <p class="lead">
+        Child of the Summer of ’76. Former waiter, post-room operative (low-level security clearance), hotel porter with a Basil Fawlty “can do” attitude; kitchen porter (washed more plates than I’ve had hot dinners); worst double glazing salesperson… ever; dry-liner/ceiling fixer (twelve years of snagging in the capital); plumber; dual‑fuel engineer.
+      </p>
+      <div class="cta-row">
+        <a class="button" href="projects.html">See a project</a>
+        <a class="button ghost" href="docs/">Browse API docs</a>
+      </div>
+    </section>
+    <aside class="card">
+      <h2>About me</h2>
+      <p>
+        I like practical builds, clean layouts, and getting things working under pressure. This site ships with auto‑generated docs via JSDoc + GitHub Actions.
+      </p>
+      <ul class="list">
+        <li>⚙️ Problem-solver & do‑er</li>
+        <li>🧰 JavaScript basics, HTML/CSS</li>
+        <li>📫 <a href="mailto:henry.taylor@example.com">henry.taylor@example.com</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="year"></span> Henry Taylor • <a href="https://github.com/henry-taylor/portfolio">Source</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    const overlayKey = 'show-web';
+    const root = document.body;
+    const saved = localStorage.getItem(overlayKey);
+    if (saved !== 'off') root.classList.remove('no-web');
+    else root.classList.add('no-web');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('no-web');
+      localStorage.setItem(overlayKey, root.classList.contains('no-web') ? 'off' : 'on');
+    });
+  </script>
+</body>
+</html>

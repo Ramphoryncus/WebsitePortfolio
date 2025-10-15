@@ -1,0 +1,143 @@
+/* Minimal, clean theme */
+:root {
+  --bg: #0b0c10;
+  --panel: #111317;
+  --text: #e5e7eb;
+  --muted: #9aa0a6;
+  --accent: #7dd3fc;
+  --accent-2: #a78bfa;
+  --border: #23252b;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(100%, 980px);
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.links a, .links button { margin-left: 0.6rem; }
+.links a[aria-current="page"] { color: var(--accent-2); }
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent-2);
+  color: #09090b;
+  font-weight: 600;
+  transition: transform 0.1s ease;
+  border: 0;
+  cursor: pointer;
+}
+.button:hover { transform: translateY(-1px); text-decoration: none; }
+.button.ghost { background: transparent; color: var(--accent-2); border: 1px solid var(--accent-2); }
+.button.small { padding: 0.35rem 0.6rem; font-size: 0.85rem; }
+
+.hero {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1.2fr 0.8fr;
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; }
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0.5rem 0 0.5rem; }
+h2 { margin: 0.5rem 0 0.25rem; }
+
+.lead { font-size: 1.125rem; color: var(--text); }
+.muted { color: var(--muted); }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.accent { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.project {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1rem;
+  align-items: start;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+footer { border-top: 1px solid var(--border); margin-top: 3rem; }
+
+/* Background themes using provided textures */
+body.theme-spider {
+  background-image: radial-gradient(transparent, rgba(0,0,0,0.25)), url('../media/spiderweb.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.theme-wood {
+  background-image: radial-gradient(transparent, rgba(0,0,0,0.25)), url('../media/wood.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+header.container, .card, .project, footer.container, .nav, main.container {
+  backdrop-filter: blur(2px);
+}
+
+
+/* Layered background: wood base, web foreground */
+html, body { min-height: 100%; }
+body {
+  background: url('../media/wood.jpg') center/cover fixed no-repeat;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('../media/spiderweb.jpg');
+  background-repeat: repeat;
+  background-size: 600px auto;
+  opacity: 0.4;             /* adjust intensity */
+  mix-blend-mode: screen;   /* keep lines bright on wood */
+  pointer-events: none;
+  z-index: -1;
+}
+/* Allow toggling the foreground web off */
+body.no-web::before { display: none; }

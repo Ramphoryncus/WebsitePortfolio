@@ -1,0 +1,18 @@
+{
+  "source": {
+    "include": [
+      "src"
+    ]
+  },
+  "plugins": [],
+  "opts": {
+    "destination": "public/docs",
+    "recurse": true,
+    "template": "templates/default"
+  },
+  "templates": {
+    "default": {
+      "includeDate": false
+    }
+  }
+}
