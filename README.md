@@ -37,10 +37,10 @@ Then open `public/docs/index.html`.
 
 ## Update with your info
 
-- Update name/email in the HTML files.
+<!-- - Update name/email in the HTML files.
 - Swap out the placeholder screenshot in `media/`.
 - Replace the sample project with your own.
-- (Optional) Add more files in `src/` and they'll be included in the docs automatically.
+- (Optional) Add more files in `src/` and they'll be included in the docs automatically. -->
 
 ## Deliverables checklist
 
