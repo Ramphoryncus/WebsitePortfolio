@@ -1,4 +1,4 @@
-# Portfolio Website with Auto Documentation
+# Portfolio Website with Auto-Documentation
 
 A quick-start personal portfolio deployed via **GitHub Pages** with **auto-generated docs** using **JSDoc** and **GitHub Actions**.
 
