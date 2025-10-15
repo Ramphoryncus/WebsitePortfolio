@@ -156,6 +156,16 @@ body {
 /* Optional: tidy the nav so it sits nicely on wood */
 .nav { background: rgba(10,11,13,0.55); backdrop-filter: blur(3px); border-radius: 12px; padding: 0.4rem 0.6rem; }
 
+/* Ensure wood fills the whole page */
+html {
+  background: #0b0c10 url('../media/wood.jpg') repeat;
+  background-size: 300px auto;   /* adjust scale here */
+}
+
+body {
+  background: transparent;       /* let the html wood show through */
+}
+
 /* Background themes using provided textures */
 /* body.theme-spider {
   background-image: radial-gradient(transparent, rgba(0,0,0,0.25)), url('../media/spiderweb.jpg');
