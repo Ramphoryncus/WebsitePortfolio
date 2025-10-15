@@ -57,7 +57,7 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
 }
 .button:hover { transform: translateY(-1px); text-decoration: none; }
-.button.ghost { background: transparent; color: var(--accent-2); border: 1px solid var(--accent-2); }
+/* .button.ghost { background: transparent; color: var(--accent-2); border: 1px solid var(--accent-2); } */
 .button.small { padding: 0.35rem 0.6rem; font-size: 0.85rem; }
 
 .hero {
