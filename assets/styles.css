@@ -109,9 +109,9 @@ footer { border-top: 1px solid var(--border); margin-top: 3rem; }
 html, body { min-height: 100%; }
 body {
   background-image: url('../media/wood.jpg');
-  background-repeat: repeat;
+  /* background-repeat: repeat;
   background-size: 300px auto; /* smaller number = smaller planks */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 /* Title banner using the web texture */
