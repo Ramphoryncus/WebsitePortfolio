@@ -193,4 +193,4 @@ body {
 } */
 
 /* Allow toggling the foreground web off */
-body.no-web::before { display: none; }
+/* body.no-web::before { display: none; } */
