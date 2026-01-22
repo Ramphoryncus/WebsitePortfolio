@@ -70,18 +70,22 @@ Below are selected projects showcasing my work in game development and technical
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script>
-    const overlayKey = 'show-web';
-    const root = document.body;
-    const saved = localStorage.getItem(overlayKey);
-    if (saved !== 'off') root.classList.remove('no-web');
-    else root.classList.add('no-web');
-    document.getElementById('themeToggle').addEventListener('click', () => {
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const overlayKey = 'show-web';
+  const root = document.body;
+  const saved = localStorage.getItem(overlayKey);
+
+  if (saved !== 'off') root.classList.remove('no-web');
+  else root.classList.add('no-web');
+
+  const themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
       root.classList.toggle('no-web');
       localStorage.setItem(overlayKey, root.classList.contains('no-web') ? 'off' : 'on');
     });
-  </script>
+  }
+</script>
 </body>
 </html>
