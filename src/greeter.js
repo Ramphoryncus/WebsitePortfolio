@@ -15,13 +15,20 @@
  */
 export function greet(name, opts = {}) {
   const base = `Hello, ${name}.`;
-  if (opts.shout) return base.toUpperCase();
+  if (opts.shout) {
+    return base.toUpperCase();
+  }
   return base;
 }
 
 /**
  * Return the current year as a number.
- * @returns {number}
+ *
+ * @returns {number} The current year.
+ *
+ * @example
+ * currentYear();
+ * // Returns: 2026
  */
 export function currentYear() {
   return new Date().getFullYear();
