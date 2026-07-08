@@ -4,7 +4,7 @@ A quick-start personal portfolio deployed via **GitHub Pages** with **auto-gener
 
 ## Live Site
 
-- `[https://ramphoryncus.github.io/WebsitePortfolio/]`
+- [Live Portfolio Website](https://ramphoryncus.github.io/WebsitePortfolio/)
 
 ## What's included
 
