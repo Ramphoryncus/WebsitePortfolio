@@ -4,7 +4,7 @@ A quick-start personal portfolio deployed via **GitHub Pages** with **auto-gener
 
 ## Live Site
 
-> Replace after your first deploy: `https://<your-username>.github.io/<your-repo>/`
+- `[https://ramphoryncus.github.io/WebsitePortfolio/]`
 
 ## What's included
 
