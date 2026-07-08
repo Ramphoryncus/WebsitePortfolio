@@ -12,10 +12,10 @@ This repo uses **GitHub Actions** to build the static site and **JSDoc** API doc
   5. Uploads `public/` as the Pages artifact.
   6. Deploys to GitHub Pages with `actions/deploy-pages`.
 
-The deployed site will be available at a URL like:
+The deployed site will be available at a URL :
 
 ```
-https://<username>.github.io/<repo>/
+https://rammphoryncus.github.io/WebsitePortfolio/
 ```
 
 ## Enabling GitHub Pages
