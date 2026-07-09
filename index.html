@@ -23,6 +23,14 @@
         <a href="docs/" target="_blank" rel="noopener noreferrer">Docs</a>
         <a class="button" href="mailto:htaylor77@hotmail.co.uk">Contact</a>
       </div>
+      <div class="container">
+        <p id="greetin"></p>
+        <script type="module">
+          import { greet, currentYear } from './src/greeter.js';
+          document.getElementById('greeting').textContent =
+          `${greet('Henry')} This portfolio was updated in ${currentYear()}.`;
+        </script>
+      </div>
     </nav>
   </header>
 
