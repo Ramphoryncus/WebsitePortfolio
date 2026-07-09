@@ -21,7 +21,7 @@ A quick-start personal portfolio deployed via **GitHub Pages** with **auto-gener
 
 Just open `index.html` in your browser.
 
-## Build docs locally (optional)
+## Docs built locally
 
 ```bash
 npx jsdoc -c jsdoc.json
@@ -30,19 +30,6 @@ npx jsdoc -c jsdoc.json
 
 Then open `public/docs/index.html`.
 
-## First-time setup
-
-1. Create a new GitHub repository (or accept the Classroom assignment).
-2. Copy these files into the repository and commit to the `main` branch.
-3. Go to **Settings → Pages** and ensure "GitHub Actions" is the source.
-4. Push a commit to trigger the workflow. The deployment URL will appear in the Actions run and under **Settings → Pages**.
-
-## Update with your info
-
-<!-- - Update name/email in the HTML files.
-- Swap out the placeholder screenshot in `media/`.
-- Replace the sample project with your own.
-- (Optional) Add more files in `src/` and they'll be included in the docs automatically. -->
 
 ## Deliverables checklist
 
@@ -50,4 +37,4 @@ Then open `public/docs/index.html`.
 - [x] `src/` with documented code
 - [x] GitHub Actions workflow in `.github/workflows/pages.yml`
 - [x] Docs generated on deploy to GitHub Pages
-- [ ] A GIF or screenshot of the live site (add to `media/` and reference in your submission)
+- [x] A GIF or screenshot of the live site (add to `media/` and reference in your submission)
