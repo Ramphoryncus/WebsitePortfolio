@@ -16,7 +16,7 @@ The generated JSDoc documentation is available on the live site at:
 
 ## Screenshot
 
-<img width="1216" height="1195" alt="Screenshot of Henry Taylor portfolio website" src="https://github.com/user-attachments/assets/cf85abf6-7fa5-4568-a7cf-046fe51c5a01" />
+<img width="1217" height="1347" alt="Screenshot of Henry Taylor portfolio website" src="https://github.com/user-attachments/assets/0a5d9ff8-97ac-4004-83ab-909e6256f6d2" />
 
 ## What's included
 
