@@ -27,5 +27,5 @@ https://rammphoryncus.github.io/WebsitePortfolio/
 ## Where the generated docs appear
 
 - The JSDoc output is published under `/docs/` on the live site, e.g.:
-  - `https://<username>.github.io/<repo>/docs/`
+  - `https://ramphoryncus.github.io/WebsitePortfolio/docs/`
 - Navigation links in `index.html` and `projects.html` point to it.
