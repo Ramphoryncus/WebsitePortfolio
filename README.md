@@ -5,7 +5,7 @@ A quick-start personal portfolio deployed via **GitHub Pages** with **auto-gener
 ## Live Site
 
 - [Live Portfolio Website](https://ramphoryncus.github.io/WebsitePortfolio/)
-- [<img width="1216" height="1195" alt="image" src="https://github.com/user-attachments/assets/cf85abf6-7fa5-4568-a7cf-046fe51c5a01"](https://ramphoryncus.github.io/WebsitePortfolio/)/>
+- <img width="1216" height="1195" alt="image" src="https://github.com/user-attachments/assets/cf85abf6-7fa5-4568-a7cf-046fe51c5a01"[](https://ramphoryncus.github.io/WebsitePortfolio/)/>
 
 
 ## What's included
