@@ -11,7 +11,7 @@ A quick-start personal portfolio deployed via **GitHub Pages** with **auto-gener
 ## What's included
 
 - `index.html` landing page with name, bio, and contact
-- `projects.html` with a sample project
+- `projects.html` with 2 sample projects
 - Simple, consistent styling in `assets/styles.css`
 - `src/greeter.js` with JSDoc docblocks (sample code)
 - GitHub Actions workflow that builds docs and publishes the site to GitHub Pages
