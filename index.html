@@ -24,14 +24,6 @@
         <a class="button" href="mailto:htaylor77@hotmail.co.uk">Contact</a>
       </div>
     </nav>
-      <div class="container">
-        <p id="greeting"></p>
-        <script type="module">
-          import { greet, currentYear } from './src/greeter.js';
-          document.getElementById('greeting').textContent =
-          `${greet('Henry')} This portfolio was updated in ${currentYear()}.`;
-        </script>
-      </div>
   </header>
 
   <main class="container web-panel hero">
@@ -49,6 +41,12 @@ Below are selected projects showcasing my work in game development and technical
       </div>
     </section>
     <aside class="card">
+      <p id="greeting"></p>
+        <script type="module">
+          import { greet, currentYear } from './src/greeter.js';
+          document.getElementById('greeting').textContent =
+          `${greet('Human')} This portfolio was updated in ${currentYear()}.`;
+        </script>
       <h2>About Me</h2>
       <p>
         I enjoy working on technically challenging problems and turning complex ideas into clear, usable systems. My approach is practical and iterative: build, test, document, and refine.
