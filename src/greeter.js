@@ -1,30 +1,52 @@
 /**
- * A tiny greeting utility to demonstrate JSDoc.
+ * @file greeter.js
+ * @description
+ * A small JavaScript utility used to demonstrate automatic documentation
+ * generation with JSDoc for the FGCT6012 portfolio website assignment.
+ *
  * @module Greeter
  */
 
 /**
- * Build a polite greeting.
- * @param {string} name - The name to greet.
- * @param {Object} [opts] - Optional settings.
- * @param {boolean} [opts.shout=false] - Whether to shout the greeting.
- * @returns {string} The formatted greeting.
+ * Builds a polite greeting for a supplied name.
+ *
+ * This function demonstrates how parameters, optional settings, return values,
+ * and examples can be documented using JSDoc comments.
+ *
+ * @function greet
+ * @memberof module:Greeter
+ * @param {string} name - The name of the person to greet.
+ * @param {Object} [opts] - Optional greeting settings.
+ * @param {boolean} [opts.shout=false] - If true, the greeting is returned in uppercase.
+ * @returns {string} A formatted greeting message.
+ *
  * @example
- * greet('Alex') // => "Hello, Alex."
- * greet('Alex', { shout: true }) // => "HELLO, ALEX!"
+ * greet("Alex");
+ * // Returns: "Hello, Alex."
+ *
+ * @example
+ * greet("Alex", { shout: true });
+ * // Returns: "HELLO, ALEX."
  */
 export function greet(name, opts = {}) {
   const base = `Hello, ${name}.`;
+
   if (opts.shout) {
     return base.toUpperCase();
   }
+
   return base;
 }
 
 /**
- * Return the current year as a number.
+ * Returns the current calendar year.
  *
- * @returns {number} The current year.
+ * This function is included as a second documented code example so that the
+ * generated JSDoc page contains more than one method.
+ *
+ * @function currentYear
+ * @memberof module:Greeter
+ * @returns {number} The current full year.
  *
  * @example
  * currentYear();
