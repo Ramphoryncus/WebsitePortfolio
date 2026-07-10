@@ -14,9 +14,20 @@ The generated JSDoc documentation is available on the live site at:
 
 - [Live JSDoc Documentation](https://ramphoryncus.github.io/WebsitePortfolio/docs/)
 
-## Screenshot
+## Website Screenshot
 
 <img width="1217" height="1347" alt="Screenshot of Henry Taylor portfolio website" src="https://github.com/user-attachments/assets/0a5d9ff8-97ac-4004-83ab-909e6256f6d2" />
+
+
+## JSDocs Screenshot
+
+<img width="1217" height="1353" alt="image" src="https://github.com/user-attachments/assets/91444a96-b2e5-4668-b16e-8367fc226f84" />
+
+
+## GitHub Actions Screenshot
+
+<img width="1217" height="1354" alt="image" src="https://github.com/user-attachments/assets/6f2cc8c2-8dd9-4d7c-a144-cbcc00c4f54a" />
+
 
 ## What's included
 
