@@ -166,6 +166,21 @@ body {
   background: transparent;       /* let the html wood show through */
 }
 
+.intro-panel,
+.qa-section {
+  padding: 1.5rem;
+}
+
+.intro-panel h1,
+.qa-section h2,
+.qa-section h3 {
+  margin-top: 0;
+}
+
+.qa-section {
+  margin-top: 1rem;
+}
+
 /* Background themes using provided textures */
 /* body.theme-spider {
   background-image: radial-gradient(transparent, rgba(0,0,0,0.25)), url('../media/spiderweb.jpg');
